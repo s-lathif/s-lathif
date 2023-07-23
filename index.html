@@ -31,7 +31,9 @@
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
                             <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" 
+                                                    href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -65,11 +67,12 @@
       justify-content: center; /* Center the content vertically */
       align-items: center;
       padding-bottom: 30vh; /* Move the content up by 30% of the viewport height from the bottom */
+      margin: 0;
     }
 
     /* Style for the gradient box containing header text and buttons */
     .gradient-box {
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%); /* Add a white gradient box with desired transparency */
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.95) 100%); /* Adjust opacity to blend the white background more */
       position: absolute;
       bottom: 0; /* Position the box at the bottom of the header */
       left: 0;
@@ -138,13 +141,34 @@
     .btn-resume:hover {
       background-color: #4e2bb3; /* Set the button color on hover */
     }
+
+    /* About Section */
+    .about {
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.95) 100%); /* Adjust opacity to blend the white background more */
+      color: #000000; /* Set the text color to black */
+      padding: 50px 0; /* Add padding to the about section */
+    }
+
+    /* Style for the about text */
+    .about-text {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    /* Optional: If you want to show the profile picture as an <img> tag */
+    .profile-img {
+      opacity: 0.98; /* Adjust opacity to blend the profile picture more */
+      border-radius: 5%;
+      width: 300px;
+      height: 393px;
+    }
   </style>
 </head>
 <body>
 
   <header>
     <div class="gradient-box">
-      <div class="header-text header-text-bottom">
+      <div class="header-text">
         <div class="badge bg-gradient-primary-to-secondary text-white mb-2">
           <div class="text-case">Deep Learning Hardware | Domain Specific Accelerators</div>
         </div>
@@ -152,65 +176,44 @@
 
       <div class="header-buttons">
         <a class="btn-projects" href="projects.html">Projects</a>
-          <a class="btn-projects" href="projects.html">Blog</a>
+        <a class="btn-projects" href="blog.html">Blog</a>
         <a class="btn-resume" href="assets/Resume.pdf">
           <div class="d-inline-block bi bi-download me-2"></div> CV </a>
       </div>
     </div>
   </header>
 
-  <section>
-    <div class="header-text">
-        <br><br>
+  <section class="about">
+    <div class="about-text">
       <div class="fs-3 fw-light text-gradient">AI ASIC enthusiast seeking dynamic opportunities to excel and innovate</div>
       <h1 class="display-3 fw-bolder mb-5">
         <span class="text-gradient d-inline">Change AI hardware paradigm with me!</span>
       </h1>
+      <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
+      <div class="mt-3">
+        <!-- Add your portrait photo here -->
+         <img src="assets/picture.png" alt="Profile" width="250" height="369" style="border-radius:50%"> 
+        <br><br>
+      </div>
+      <p class="lead fw-light mb-4">My name is Lathif Sharieff and I am an AI ASIC enthusiast.</p>
+      <p class="text-muted">Motivated and ambitious Master’s student with hands-on experience in various projects involving ASIC and FPGA architecture. Solid understanding of AI hardware design principles. Passionate about the intersection of AI and computer architecture, exploring the synergies between cutting-edge technologies to drive innovation and maximize performance.</p>
+      <div class="d-flex justify-content-center fs-2 gap-4">
+        <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
+        <a class="text-gradient" href="https://www.linkedin.com/in/lathifsharieff/"><i class="bi bi-linkedin"></i></a>
+        <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
+      </div>
     </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about">
-    <!-- Your About Section Content Goes Here -->
   </section>
 
 </body>
 </html>
 
 
-
-
-            <!-- About Section-->
-            <section class="bg-light py-5">
-                <div class="container px-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-xxl-8">
-                            <div class="text-center my-5">
-                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-                                <!-- Added div for profile photo -->
-                                <div class="mt-3">
-                               <img src="assets/bottom_pic.png" alt="Profile" width="300" height="393" style="border-radius:50%"> 
-                                    <br><br>
-                                </div>
-                                <p class="lead fw-light mb-4">My name is Lathif Sharieff and I am an AI ASIC enthusiast.</p>
-                                <p class="text-muted">Motivated and ambitious Master’s student with hands-on experience in various projects involving ASIC and FPGA architecture. Solid understanding of AI hardware design principles. Passionate about the intersection of AI and computer architecture, exploring the synergies between cutting-edge technologies to drive innovation and maximize performance.</p>
-                                <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
-                                    <a class="text-gradient" href="https://www.linkedin.com/in/lathifsharieff/"><i class="bi bi-linkedin"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
         <!-- Footer-->
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; lathifs@tech</div></div>
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; lathifs@tech 2023</div></div>
                     <div class="col-auto">
                         <a class="small" href="#!">Privacy</a>
                         <span class="mx-1">&middot;</span>
