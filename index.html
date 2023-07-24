@@ -166,13 +166,53 @@
 </head>
 <body>
 
-  <header>
-    <div class="gradient-box">
-      <div class="header-text">
-        <div class="badge bg-gradient-primary-to-secondary text-white mb-2">
-          <div class="text-case">Deep Learning Hardware | Domain Specific Accelerators</div>
-        </div>
+<header>
+  <div class="gradient-box">
+    <div class="header-text">
+      <div class="badge bg-gradient-primary-to-secondary text-white mb-2">
+        <div class="text-case">Deep Learning Hardware | Domain Specific Accelerators</div>
       </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  /* Existing Styles */
+
+  /* New styles for responsive header text */
+  .header-text {
+    max-width: 90%;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #5a31d4, #4e2bb3);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: flex;
+    flex-direction: column; /* Align text in a list fashion */
+    align-items: center;
+    font-size: 24px; /* Default font size for larger screens */
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Adjust font size and flex direction for smaller screens */
+    .header-text {
+      font-size: 18px;
+      flex-direction: column;
+    }
+
+    .header-text .text-case {
+      margin: 5px 0; /* Add some space between each part of the text in the list */
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    /* Further adjust font size for extra small screens */
+    .header-text {
+      font-size: 16px;
+    }
+  }
+</style>
+
+
 
       <div class="header-buttons">
         <a class="btn-projects" href="projects.html">Projects</a>
